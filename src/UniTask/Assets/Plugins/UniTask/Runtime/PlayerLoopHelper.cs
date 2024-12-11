@@ -202,7 +202,7 @@ namespace Cysharp.Threading.Tasks
 #if UNITY_EDITOR
             EditorApplication.playModeStateChanged += (state) =>
             {
-                if (state == PlayModeStateChange.EnteredEditMode || state == PlayModeStateChange.ExitingEditMode)
+                if (state == PlayModeStateChange.ExitingPlayMode || state == PlayModeStateChange.ExitingEditMode)
                 {
                     IsEditorApplicationQuitting = true;
                     // run rest action before clear.
